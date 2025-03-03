@@ -55,7 +55,7 @@ class MembreDAO
     {
         $SQL_AJOUTER_MEMBRE = "INSERT INTO `membre`(`prenom`, `nom`, `pseudonyme`,`motdepasse`,`courriel`,`avatar`) VALUES (:prenom, :nom, :pseudonyme, :motdepasse, :courriel, :avatar)";
         $requeteAjouterMembre = BaseDeDonnees::getConnnexion()->prepare($SQL_AJOUTER_MEMBRE);
-        $requeteAjouterMembre->bindParam(':', $nouveauMembre['prenom'], PDO::PARAM_STR);
+        $requeteAjouterMembre->bindParam(':prenom', $nouveauMembre['prenom'], PDO::PARAM_STR);
         $requeteAjouterMembre->bindParam(':nom', $nouveauMembre['nom'], PDO::PARAM_STR);
         $requeteAjouterMembre->bindParam(':pseudonyme', $nouveauMembre['pseudonyme'], PDO::PARAM_STR);
         $requeteAjouterMembre->bindParam(':motdepasse', $nouveauMembre['motdepasse'], PDO::PARAM_STR);
