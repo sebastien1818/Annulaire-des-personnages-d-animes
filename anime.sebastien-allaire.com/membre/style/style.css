@@ -1,0 +1,44 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+nav ul {
+    list-style-type: none;
+    display: flex;
+  }
+
+nav li {
+    flex: 1 1 auto;
+    text-align: center;
+    position: relative;
+    background-color: black;
+    text-align: center;
+}
+
+nav li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-weight: bold;
+  }
+
+footer {
+  display: flex;
+  background-color: black;
+  flex-basis: 100%;
+  box-sizing: border-box;
+  padding: 10px;
+  align-items: center;
+}
+
+.copyright {
+  text-align: left;
+  font-weight: bold;
+  color: white;
+}
+
+
+

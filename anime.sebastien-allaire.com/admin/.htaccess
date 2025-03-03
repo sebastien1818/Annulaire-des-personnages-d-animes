@@ -1,0 +1,5 @@
+AuthName "Page d'administration protégée"
+AuthType Basic
+#AuthUserFile "C:\xampp\htdocs\mdp\.htpasswd"
+AuthUserFile "/home/tiweb/public_html/etudiants/2022/allaires/mdp/.htpasswd"
+Require valid-user
